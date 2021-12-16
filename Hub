@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("[G.A] Scripts Library")
 
-local serv = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938")
+local serv = win:Server("Scripts", "http://www.roblox.com/asset/?id=6022668888")
 
 local btns = serv:Channel("Swag Mode")
 
