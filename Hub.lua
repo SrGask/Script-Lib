@@ -9,7 +9,7 @@ local btns = serv:Channel("Swag Mode")
 local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts Library!", "Que pro B)")
 
 game:GetService("StarterGui"):SetCore("SendNotification",{Title="Bienvenido",Text=game.Players.LocalPlayer.Name})
-game:GetService("StarterGui"):SetCore("SendNotification",{Title="El italia es gay lol",Text=""})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title="Borbon terrible gay",Text=""})
 
 btns:Button("Swag Mode", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
