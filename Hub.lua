@@ -1,15 +1,19 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local win = DiscordLib:Window("[G.A] Scripts Library")
+local win = DiscordLib:Window("[G.A] DH Scripts Hub")
 
-local serv = win:Server("Scripts", "http://www.roblox.com/asset/?id=6022668888")
+local serv = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031280882")
 
 local btns = serv:Channel("Swag Mode")
 
 local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts Library!", "Que pro B)")
 
-game:GetService("StarterGui"):SetCore("SendNotification",{Title="Bienvenido",Text=game.Players.LocalPlayer.Name})
-game:GetService("StarterGui"):SetCore("SendNotification",{Title="Borbon terrible gay",Text=""})
+  game.StarterGui:SetCore("SendNotification", {
+    Title = 'Bienvenido';
+    Text = game.Players.LocalPlayer.Name;
+    Icon = 'http://www.roblox.com/asset/?id=6034407084';
+    Duration = 10;
+  })
 
 btns:Button("Swag Mode", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
@@ -48,7 +52,12 @@ local btns = serv:Channel("$moke")
 
 btns:Button("$moke", function()
 loadstring("\10\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\105\116\101\121\122\47\83\109\111\107\101\47\109\97\105\110\47\115\111\117\114\99\101\39\41\41\41\40\41\10")()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+DiscordLib:Notification("Notificacion", "No funciona bobo", ":(")
+end)
+
+btns:Seperator()
+
+btns:Label("                                 [No funciona lol]", function()
 end)
 
 btns:Seperator()
@@ -56,6 +65,11 @@ btns:Seperator()
 btns:Button("$moke Rojo", function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/Biteyz/smokey/main/Output.lua")()
 DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+end)
+
+btns:Seperator()
+
+btns:Label("                                 [Esta medio bug]", function()
 end)
 
 local btns = serv:Channel("V.G Hub")
@@ -119,7 +133,12 @@ local btns = serv:Channel("Dawny")
 
 btns:Button("Dawny", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/and45554/Dawny-Auto-Updating-Loadstrings/main/Da-Hood", true))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+DiscordLib:Notification("Notificacion", "DESCONTINUADO :(", "/e cry")
+end)
+
+btns:Seperator()
+
+btns:Label("                                 [DESCONTINUADO]", function()
 end)
 
 local btns = serv:Channel("ZellHub")
