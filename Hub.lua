@@ -16,7 +16,7 @@ local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts 
   })
 
   game.StarterGui:SetCore("SendNotification", {
-    Title = 'Bienvenido';
+    Title = 'L0L';
     Text = game.Players.LocalPlayer.Name;
     Icon = 'http://www.roblox.com/asset/?id=6034407084';
     Duration = 10;
