@@ -17,7 +17,7 @@ local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts 
 
   game.StarterGui:SetCore("SendNotification", {
     Title = 'L0L';
-    Text = El italia come pene;
+    Text = 'El italia se la come';
     Duration = 10;
   })
 
@@ -137,7 +137,6 @@ end)
 local btns = serv:Channel("Dawny")
 
 btns:Button("Dawny", function()
---loadstring(game:HttpGet("https://raw.githubusercontent.com/and45554/Dawny-Auto-Updating-Loadstrings/main/Da-Hood", true))()
 DiscordLib:Notification("Notificacion", "DESCONTINUADO :(", "/e cry")
 end)
 
