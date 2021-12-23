@@ -1,4 +1,4 @@
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 local win = DiscordLib:Window("[G.A] DH Scripts Hub")
 
@@ -7,6 +7,13 @@ local serv = win:Server("Scripts", "http://www.roblox.com/asset/?id=6031280882")
 local btns = serv:Channel("Swag Mode")
 
 local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts Library!", "Que pro B)")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = 'Bienvenido';
+    Text = game.Players.LocalPlayer.Name;
+    Icon = 'http://www.roblox.com/asset/?id=6034407084';
+    Duration = 10;
+  })
 
   game.StarterGui:SetCore("SendNotification", {
     Title = 'Bienvenido';
@@ -56,7 +63,7 @@ end)
 
 btns:Seperator()
 
-btns:Label("                                 [No funciona lol]", function()
+btns:Label("                                   [No funciona lol]", function()
 end)
 
 btns:Seperator()
@@ -68,7 +75,7 @@ end)
 
 btns:Seperator()
 
-btns:Label("                                 [Esta medio bug]", function()
+btns:Label("                                   [Esta medio bug]", function()
 end)
 
 local btns = serv:Channel("V.G Hub")
@@ -131,7 +138,7 @@ end)
 local btns = serv:Channel("Dawny")
 
 btns:Button("Dawny", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/and45554/Dawny-Auto-Updating-Loadstrings/main/Da-Hood", true))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/and45554/Dawny-Auto-Updating-Loadstrings/main/Da-Hood", true))()
 DiscordLib:Notification("Notificacion", "DESCONTINUADO :(", "/e cry")
 end)
 
