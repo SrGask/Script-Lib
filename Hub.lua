@@ -17,8 +17,7 @@ local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts 
 
   game.StarterGui:SetCore("SendNotification", {
     Title = 'L0L';
-    Text = game.Players.LocalPlayer.Name;
-    Icon = 'http://www.roblox.com/asset/?id=6034407084';
+    Text = El italia come pene;
     Duration = 10;
   })
 
