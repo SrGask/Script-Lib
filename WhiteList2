@@ -1,10 +1,17 @@
-local ADMINS = {
-    3098428016, -- Unbotdesofia2
-}
-local MODS = {
-}
-local STARS = {
-}
+ModIDS = {
+
+    }
+
+    BoxingChampion = {
+    601414537,
+    }
+    Monkey = {
+    3098428016,
+    }
+
+    admin = {
+    690643432,
+    }
 
 --\\ Don't mess with anything below this
 function checkhub()
@@ -23,24 +30,24 @@ function checkhub()
 				end
 			end
 		elseif
-			table.find(kristina, Player.UserId) then
+			table.find(Monkey, Player.UserId) then
 			if Player.Character then
 				if Player.Character.Parent.Name == 'Players' then
-					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('IM THE REAL KRISTINA')
+					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🐒]')
 				end
 			end
 		elseif
 			table.find(admin, Player.UserId) then
 			if Player.Character then
 				if Player.Character.Parent.Name == 'Players' then
-					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('🛡️Swagode Admin🛡️')
+					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[Pro Exploiter 🍆]')
 				end
 			end
 		if
 			Player.Character then
 			if Player.Character.Parent.Name == 'Players' then
 				if not Player.Character.UpperTorso:FindFirstChild('OriginalSize') then
-					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. Player.DisplayName)
+					Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[✔]' .. Player.DisplayName)
 				end
 			end
 		end
