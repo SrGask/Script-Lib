@@ -1,6 +1,6 @@
---[[ MOD WHITELIST ]]--
-ModCheck = {
-  [3098428016] = true, -- \\ Unbotdesofia2
+ModIDS = {
+    [3098428016] = true, -- Unbotdesofia2
+
 }
- 
-return ModCheck
+
+return ModIDS
