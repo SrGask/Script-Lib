@@ -18,27 +18,57 @@ local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts 
   })
 
   game.StarterGui:SetCore("SendNotification", {
-    Title = 'L0L';
-    Text = 'El italia se la come';
+    Title = 'Plasma!!!!';
+    Text = 'LO MEJOOOR';
     Duration = 10;
   })
 
+pcall(function()
+  if not game.Players.LocalPlayer:IsInGroup(13110412) then
+    coroutine.resume(coroutine.create(function()
+       wait(10)
+       game.StarterGui:SetCore("SendNotification", {
+        Title = 'No estas en la crew!';
+        Text = 'Unete a la crew hijo de perra';
+        Duration = 10;
+       })
+    end))
+  end
+end)
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
-loadstring(game:HttpGet("https://pastebin.com/raw/nzXicwc1", true))() -- Chatspy
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/main/Spy.lua", true))() -- Chatspy
 
 --------------------------------------------------------------------------------------------------------------------------------------
+
+btns:Label("                                     [SWAG MODE]", function()
+end)
+
+btns:Seperator()
 
 btns:Button("Swag Mode", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[SWAG MODE]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
 
 btns:Button("Swag Mode OLD", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/OldSwagmode'))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[SWAG MODE OLD] ';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -46,16 +76,33 @@ end)
 
 local btns = serv:Channel("Faded")
 
+btns:Label("                                         [FADED]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("Faded", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[FADED]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
 
 btns:Button("Faded OLD", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Old-Faded-Discontinued/main/YesEpic", true))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[FADED OLD]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -63,9 +110,20 @@ end)
 
 local btns = serv:Channel("Ray Codex")
 
+btns:Label("                                      [RAY CODEX]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("Ray Codex", function()
 loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[RAY CODEX]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -73,9 +131,42 @@ end)
 
 local btns = serv:Channel("RayX")
 
+btns:Label("                                          [RAYX]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("RayX", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))() 
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[RAYX]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
+end)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+local btns = serv:Channel("Plasma")
+
+btns:Label("                                         [PLASMA]", function()
+end)
+
+btns:Seperator()
+
+
+btns:Button("Plasma", function()
+loadstring(game:HttpGet('https://iexploit.xyz/scripts/plasma/storage/Loader'))()
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[PLASMA]';
+    Text = 'Ejecutado LOOOL';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -83,8 +174,20 @@ end)
 
 local btns = serv:Channel("$moke")
 
+btns:Label("                                          [$MOKE]", function()
+end)
+
+btns:Seperator()
+
+
 btns:Button("$moke", function()
-DiscordLib:Notification("Notificacion", "No funciona bobo", ":(")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[$MOKE]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
@@ -96,7 +199,13 @@ btns:Seperator()
 
 btns:Button("$moke Rojo", function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/Biteyz/smokey/main/Output.lua")()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[$MOKE]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
@@ -109,16 +218,42 @@ end)
 
 local btns = serv:Channel("V.G Hub")
 
+btns:Label("                                         [V.G HUB]", function()
+end)
+
+btns:Seperator()
+
+
 btns:Button("V.G Hub", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[V.G HUB]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
 local btns = serv:Channel("Trust Boy")
 
+btns:Label("                                      [TRUST BOY]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("Trust Boy", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/XXAWmifh'))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[TRUST BOY]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -126,17 +261,38 @@ end)
 
 local btns = serv:Channel("Destiny")
 
+btns:Label("                                        [DESTINY]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("Destiny", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[DESTINY]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
+end)
+
+btns:Seperator()
+
+btns:Button("Grupo", function()
+setclipboard('https://www.roblox.com/groups/7658734')
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[DESTINY]';
+    Text = 'Grupo Copiado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
 
 btns:Label("                                 [REQUIERE GRUPO]", function()
-end)
-
-btns:Label("                             Link:roblox.com/7658734", function()
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -144,17 +300,38 @@ end)
 
 local btns = serv:Channel("Arctic")
 
+btns:Label("                                         [ARCTIC]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("Arctic", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[ARCTIC]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
+end)
+
+btns:Seperator()
+
+btns:Button("Grupo", function()
+setclipboard('https://www.roblox.com/groups/12243982')
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[ARCTIC]';
+    Text = 'Grupo Copiado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
 
 btns:Label("                                 [REQUIERE GRUPO]", function()
-end)
-
-btns:Label("                                  Se copia al ejecutar", function()
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -162,36 +339,83 @@ end)
 
 local btns = serv:Channel("Dark.exe")
 
+btns:Label("                                       [DARK.EXE]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("Dark.exe", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/awboyboy/Dark.exe-Commands/main/Version%20V.1.0.1"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[DARK.EXE]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
 
 btns:Button("Comando", function()
-DiscordLib:Notification("Notificacion", ":dark.exe", "ez")
+setclipboard(':dark.exe')
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[DARK.EXE]';
+    Text = 'Key Copiada';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------
 
-local btns = serv:Channel("Dawny")
+--local btns = serv:Channel("Dawny")
 
-btns:Button("Dawny", function()
-DiscordLib:Notification("Notificacion", "DESCONTINUADO :(", "/e cry")
+--btns:Seperator()
+
+--btns:Button("Dawny", function()
+--DiscordLib:Notification("Notificacion", "DESCONTINUADO :(", "/e cry")
+--end)
+
+--btns:Seperator()
+
+--btns:Label("                                 [DESCONTINUADO]", function()
+--end)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+local btns = serv:Channel("ZellHub")
+
+btns:Label("                                        [ZELLHUB]", function()
 end)
 
 btns:Seperator()
 
-btns:Label("                                 [DESCONTINUADO]", function()
-end)
-
-local btns = serv:Channel("ZellHub")
-
 btns:Button("ZellHub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStuff/zellhubnew/main/SCRIPTPRO.lua"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[ZELLHUB]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
+end)
+
+btns:Seperator()
+
+btns:Button("Grupo", function()
+setclipboard('https://www.roblox.com/groups/729213')
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[ZELLHUB]';
+    Text = 'Grupo Copiado';
+    Duration = 10;
+  })
+
 end)
 
 btns:Seperator()
@@ -199,17 +423,25 @@ btns:Seperator()
 btns:Label("                                 [REQUIERE GRUPO]", function()
 end)
 
-btns:Label("                                  Se copia al ejecutar", function()
-end)
-
 --------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------
 
 local btns = serv:Channel("BoxWare")
 
+btns:Label("                                      [BOXWARE]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("BoxWare", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/crypthook/some-shit-script-crack/main/boxware"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[BOXWARE]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -217,9 +449,20 @@ end)
 
 local btns = serv:Channel("HoodShark")
 
+btns:Label("                                    [HOODSHARK]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("HoodShark", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/7cGyt1mi"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[HOODSHARK]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -227,9 +470,20 @@ end)
 
 local btns = serv:Channel("DemonWare")
 
+btns:Label("                                   [DEMONWARE]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("DemonWare", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JacobCTT/dwISWnextUpdateFIXAUTOBUYS/main/Final_AjkcWLckHfnkJjcC.lua"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[DEMONWARE]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -237,9 +491,20 @@ end)
 
 local btns = serv:Channel("NovaGUI")
 
+btns:Label("                                       [NOVAGUI]", function()
+end)
+
+btns:Seperator()
+
 btns:Button("NovaGUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IcxyLol/Nova-Gui-New/main/README.md", true))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[NOVAGUI]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -247,15 +512,53 @@ end)
 
 local btns = serv:Channel("Krypt")
 
-btns:Button("Krypt", function()
-loadstring(game:HttpGet("https://softwarecp.net"))()
-DiscordLib:Notification("Notificacion", "Ejecutado!", "ez")
+btns:Label("                                          [KRYPT]", function()
 end)
 
 btns:Seperator()
 
-btns:Button("Krypt Key", function()
-DiscordLib:Notification("Notificacion", "Key: kryptrevival", "ez")
+btns:Button("Krypt", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/loader"))()
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[KRYPT]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
+end)
+
+btns:Seperator()
+
+btns:Button("Key", function()
+setclipboard('kryptrevampedisout')
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[KRYPT]';
+    Text = 'key Copiada';
+    Duration = 10;
+  })
+
+end)
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+local btns = serv:Channel("Auth.gg")
+
+btns:Label("                                        [AUTH.GG]", function()
+end)
+
+btns:Seperator()
+
+btns:Button("Auth.gg", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/main/auth.lua"))()
+
+  game.StarterGui:SetCore("SendNotification", {
+    Title = '[AUTH.GG]';
+    Text = 'Ejecutado';
+    Duration = 10;
+  })
+
 end)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -366,7 +669,7 @@ end
 muted = {}
 mutingnew = false 
 
-local ModCheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList%202'))()
+local ModCheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList"))()
 Players.PlayerAdded:Connect(function(plr)
     local SWAGMIN = table.find(swagmins, plr.UserId)
     if SWAGMIN or ModCheck[plr.UserId] then
@@ -399,14 +702,14 @@ wait(5)
 if ModCheck[player.UserId] then
     IsMod = true
     DisableMod = true
-    announce('Se te han dado rango Mod', 'Eres Inmune a todo Comando de Mod', 10)
+    announce('Granted Mod Powers', 'you are immune to mod powers | type /e noshield or /e shield to toggle', 10)
 elseif table.find(swagmins, player.UserId) then
-    announce('Eres acmin', 'hi :3', 10)
+    announce('Granted Admin Powers', 'hi :3', 10)
     IsMod = false
     DisableMod = false
 else
     IsMod = false
     DisableMod = false
-    announce('Comandos Cargados', 'Que pro', 10)
+    announce('Commands Loaded', 'join discord.gg/swagmode for a list of commands', 10)
 end
 if err then print(err) end
