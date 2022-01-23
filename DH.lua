@@ -23,18 +23,14 @@ local win = DiscordLib:Notification("Notificacion", "Bienvenido a [G.A] Scripts 
     Duration = 10;
   })
 
-pcall(function()
-  if not game.Players.LocalPlayer:IsInGroup(13110412) then
-    coroutine.resume(coroutine.create(function()
-       wait(10)
-       game.StarterGui:SetCore("SendNotification", {
-        Title = 'No estas en la crew!';
-        Text = 'Unete a la crew hijo de perra';
-        Duration = 10;
-       })
-    end))
-  end
-end)
+  local SongID = "rbxassetid://1562091866"
+local Song = Instance.new("Sound", game.Workspace)
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -56,6 +52,12 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-project
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -68,6 +70,12 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-project
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -90,6 +98,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/mai
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -102,6 +116,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Old-Faded
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -124,6 +144,12 @@ loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -139,11 +165,30 @@ btns:Seperator()
 btns:Button("RayX", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))() 
 
+pcall(function()
+  if not game.Players.LocalPlayer:IsInGroup(12271076) then
+    coroutine.resume(coroutine.create(function()
+       wait(1)
+       game.StarterGui:SetCore("SendNotification", {
+        Title = '[ERROR]';
+        Text = 'No estas en el grupo de RayX!';
+        Duration = 10;
+       })
+    end))
+  end
+end)
+
   game.StarterGui:SetCore("SendNotification", {
     Title = '[RAYX]';
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -167,6 +212,12 @@ loadstring(game:HttpGet('https://iexploit.xyz/scripts/plasma/storage/Loader'))()
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -188,6 +239,12 @@ btns:Button("$moke", function()
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -205,6 +262,12 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/Biteyz/smokey/main/Out
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -233,6 +296,12 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -253,6 +322,12 @@ loadstring(game:HttpGet('https://pastebin.com/raw/XXAWmifh'))()
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -275,6 +350,12 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/mai
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -287,6 +368,12 @@ setclipboard('https://www.roblox.com/groups/7658734')
     Text = 'Grupo Copiado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -314,6 +401,12 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -326,6 +419,12 @@ setclipboard('https://www.roblox.com/groups/12243982')
     Text = 'Grupo Copiado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -353,6 +452,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/awboyboy/Dark.exe-Com
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -365,6 +470,12 @@ setclipboard(':dark.exe')
     Text = 'Key Copiada';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -403,6 +514,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStu
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -415,6 +532,12 @@ setclipboard('https://www.roblox.com/groups/729213')
     Text = 'Grupo Copiado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -442,6 +565,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/crypthook/some-shit-s
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -462,6 +591,12 @@ loadstring(game:HttpGet("https://pastebin.com/raw/7cGyt1mi"))()
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -484,6 +619,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JacobCTT/dwISWnextUpd
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -504,6 +645,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IcxyLol/Nova-Gui-New/
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
@@ -526,6 +673,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/lo
     Duration = 10;
   })
 
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
+
 end)
 
 btns:Seperator()
@@ -538,6 +691,12 @@ setclipboard('kryptrevampedisout')
     Text = 'key Copiada';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -558,6 +717,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/mai
     Text = 'Ejecutado';
     Duration = 10;
   })
+
+Song.SoundId = SongID
+Song.Looped = false
+Song:Play()
+wait(1)
+Song:Pause()
 
 end)
 
