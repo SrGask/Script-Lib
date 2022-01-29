@@ -834,7 +834,7 @@ end
 muted = {}
 mutingnew = false 
 
-local ModCheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList"))()
+local ModCheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList2"))()
 Players.PlayerAdded:Connect(function(plr)
     local SWAGMIN = table.find(swagmins, plr.UserId)
     if SWAGMIN or ModCheck[plr.UserId] then
