@@ -92,6 +92,7 @@ game.StarterGui:SetCore("SendNotification", {
 Whitelist = {
 	[456003260] = true,
 	[3287500413] = true,
+	[3306969602] = true,
 }
 
 wait(3)
