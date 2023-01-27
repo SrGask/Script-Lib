@@ -1,8 +1,8 @@
 Admiteds = {
 	[456003260] = true, -- The Masive Monke
-    [3306969602] = true, -- Adrian
-    [211345193] = true, -- tavo72
-    [2771502217] = true, -- Sofi <3
+	[3306969602] = true, -- Adrian
+	[211345193] = true, -- tavo72
+	[2771502217] = true, -- Sofi <3
 }
 
 return Admiteds
