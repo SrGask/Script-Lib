@@ -53,6 +53,8 @@ local NotificationSound5 = Instance.new("Sound")
 
 local Onichan = Instance.new("Sound")
 
+local WitheList = loadstring(game:HttpGet('https://raw.githubusercontent.com/SrGask/Script-Lib/main/WhiteList'))()
+
 TW = game:GetService('TweenService')
 UIS = game:GetService('UserInputService')
 RS = game:GetService('RunService')
@@ -89,11 +91,9 @@ game.StarterGui:SetCore("SendNotification", {
 	Duration = 2;
 })
 
-Whitelist = {
-	[456003260] = true,
-	[3287500413] = true,
-	[3306969602] = true,
-}
+if not WitheList then
+	return
+end
 
 wait(3)
 
@@ -17921,6 +17921,11 @@ MuteNotificationsButton.Activated:Connect(function()
 end)
 
 game.Players.PlayerAdded:Connect(function(player)
+    	if Whitelist[player.UserId] then
+		local content = game.Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+		Notification2("Another Admited User Joined 💖", player.DisplayName, content, 3)
+		Onichan:Play()
+	end
 	if not GuiDestroyed then
 		local content = game.Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 		Notification2("Player Joined", player.DisplayName, content, 3)
