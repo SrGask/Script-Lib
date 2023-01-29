@@ -1,3 +1,5 @@
+print(WhiteList Loaded)
+
 Admiteds = {
 	[456003260] = true, -- The Masive Monke
 	[3306969602] = true, -- Adrian
