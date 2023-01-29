@@ -92,6 +92,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
 
 if not WitheList then
+	warn(WitheList Not Found!)
 	return
 end
 
