@@ -1,4 +1,4 @@
-print(WhiteList Loaded)
+print("[TC]: WhiteList Loaded")
 
 Admiteds = {
 	[456003260] = true, -- The Masive Monke
