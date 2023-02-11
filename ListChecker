@@ -17706,17 +17706,33 @@ function Protections()
 			local loopFunction = function()
 				local forbidden = {'[RPG]','[SMG]','[TacticalShotgun]','[AK47]','[AUG]','[Glock]', '[Shotgun]','[Flamethrower]','[Silencer]','[AR]','[Revolver]','[SilencerAR]','[LMG]','[P90]','[DrumGun]','[Double-Barrel SG]','[Hamburger]','[Chicken]','[Pizza]','[Cranberry]','[Donut]','[Taco]','[Starblox Latte]','[BrownBag]','[Weights]','[HeavyWeights]'}
 				local Found = false
-				for _,v in pairs(game.Workspace.Players:GetChildren()) do
-					if v:FindFirstChild("LeftHand") or v:FindFirstChild("RightHand") then
-						if (v.LeftHand.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= MaxDistance or (v.RightHand.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= MaxDistance then
-							if v.BodyEffects.Attacking.Value == true and not table.find(forbidden, v:FindFirstChildWhichIsA('Tool').Name ) and v.Name ~= Player.Name then
-								Found = true
-								MainEvent:FireServer('Block', Player.Name)
+				if game.Workspace:FindFirstChild("Players") then
+					for _,v in pairs(game.Workspace.Players:GetChildren()) do
+						if v:FindFirstChild("LeftHand") or v:FindFirstChild("RightHand") then
+							if (v.LeftHand.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= MaxDistance or (v.RightHand.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= MaxDistance then
+								if v.BodyEffects.Attacking.Value == true and not table.find(forbidden, v:FindFirstChildWhichIsA('Tool').Name ) and v.Name ~= Player.Name then
+									Found = true
+									MainEvent:FireServer('Block', Player.Name)
 
+								end
 							end
+						else
+							print(v.." No has UpperTorso!")
 						end
-					else
-						print(v.." No has UpperTorso!")
+					end
+				else
+					for _,v in pairs(game.Workspace:GetChildren()) do
+						if v:FindFirstChild("LeftHand") or v:FindFirstChild("RightHand") then
+							if (v.LeftHand.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= MaxDistance or (v.RightHand.Position - Player.Character.HumanoidRootPart.Position).Magnitude <= MaxDistance then
+								if v.BodyEffects.Attacking.Value == true and not table.find(forbidden, v:FindFirstChildWhichIsA('Tool').Name ) and v.Name ~= Player.Name then
+									Found = true
+									MainEvent:FireServer('Block', Player.Name)
+
+								end
+							end
+						else
+							print(v.." No has UpperTorso!")
+						end
 					end
 				end
 				if Found == false and HoldingF == false then
@@ -17952,8 +17968,14 @@ end)
 coroutine.resume(coroutine.create(function()
 	while wait(10) do
 		if not GuiDestroyed then
-			for i,v in pairs(game.Workspace.Players:GetChildren()) do
-				v:FindFirstChildWhichIsA('Humanoid').DisplayDistanceType = 'Subject'
+			if game.Workspace:FindFirstChild("Players") then
+				for i,v in pairs(game.Workspace.Players:GetChildren()) do
+					v:FindFirstChildWhichIsA('Humanoid').DisplayDistanceType = 'Subject'
+				end
+			else
+				for i,v in pairs(game.Workspace:GetChildren()) do
+					v:FindFirstChildWhichIsA('Humanoid').DisplayDistanceType = 'Subject'
+				end
 			end
 			if ARE then
 				print("Refreshing")
